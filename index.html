@@ -4,15 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <title>Page title</title>
-    <link rel="stylesheet" href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/Hover.css">
+    <style>
+        :root {
+    --color1: #e32dc5;
+    --color2: #27e8db;
+    --color3: #ff601c;
+    --color4: #c2ff1c;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111;
+}
+
+.btn {
+    position: relative;
+    font-size: 24px;
+    padding: 0.75em 3em;
+    border-radius: 0.5em;
+    border: 0.15em solid var(--color1);
+    background-color: transparent;
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px var(--color1), -2px -2px 10px var(--color1);
+    box-shadow: 0 0 25px 3px var(--color1), inset 0 0 15px 3px var(--color1);
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    transform: prospective(5em) rotetx(70deg);
+    filter: blur(20px);
+    opacity: 0.3;
+    
+}
+
+.btn:hover {
+    background-color: var(--color1);
+    color: #111;
+    box-shadow: 0 0 50 15 var(--color1);
+}
+
+.btn:hover:after {
+    opacity: 1;
+}
+
+.btn2 {
+    margin-top: -350px;
+    color: var(--color2);
+    border: 0.15em solid var(--color2);
+    text-shadow: 2px 2px 10px var(--color2), -2px -2px 10px var(--color2);
+    box-shadow: 0 0 25px 3px var(--color2), inset 0 0 15px 3px var(--color2);
+}
+
+.btn2:hover {
+    background-color: var(--color2);
+    box-shadow: 0 0 50px 15px var(--color2);
+}
+
+.btn2:after {
+    background-color: var(--color2);
+}
+
+.btn3 {
+    margin-top: -350px;
+    color: var(--color3);
+    border: 0.15em solid var(--color3);
+    text-shadow: 2px 2px 10px var(--color3), -2px -2px 10px var(--color2);
+    box-shadow: 0 0 25px 3px var(--color3), inset 0 0 15px 3px var(--color3);
+}
+
+.btn3:hover {
+    background-color: var(--color3);
+    box-shadow: 0 0 50px 15px var(--color3);
+}
+
+.btn3:after {
+    background-color: var(--color3);
+}
+
+.btn4 {
+    margin-top: -350px;
+    color: var(--color4);
+    border: 0.15em solid var(--color4);
+    text-shadow: 2px 2px 10px var(--color4), -2px -2px 10px var(--color2);
+    box-shadow: 0 0 25px 3px var(--color4), inset 0 0 15px 3px var(--color4);
+}
+
+.btn4:hover {
+    background-color: var(--color4);
+    box-shadow: 0 0 50px 15px var(--color4);
+}
+
+.btn4:after {
+    background-color: var(--color4);
+}
+.img {
+    height: 20%;
+    width: 20%;
+}
+
+.img2 {
+    width: 100px;
+    height: 100px;
+    }
+        
+    </style>
 </head>
 <body>
-  <div><a href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/hover2.html" class="btn btn1">Like</a></div>
-  <div><a href="https://play.google.com/store/apps/details?id=org.telegram.messenger"><img src="/storage/emulated/0/Documents/HTML PROGRAMMING/-3337190045231025_97.jpg" alt="" class="btn btn1 img"></a></div>
-  <div><a href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/hover2.html" class="btn btn2">Follow</a></div>
-  <div><a href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/hover2.html" class="btn btn3">Comment</a></div>
-  <div><a href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/hover2.html" class="btn btn4">Share</a></div>
-  <div><a href="/storage/emulated/0/DCIM/Screenshots/IMG_20220903_225446.jpg" alt="/storage/emulated/0/DCIM/Screenshots/IMG_20220903_225446.jpg" class="btn btn4 img2">link</a></div>
+  <div><a href="hover2.html" class="btn btn1">Like</a></div>
+  <div><a href="https://play.google.com/store/apps/details?id=org.telegram.messenger"><img src="#" alt="telegram" class="btn btn1 img"></a></div>
+  <div><a href="hover2.html" class="btn btn2">Follow</a></div>
+  <div><a href="hover2.html" class="btn btn3">Comment</a></div>
+  <div><a href="hover2.html" class="btn btn4">Share</a></div>
+  <div><a href="#" alt="link" class="btn btn4 img2">link</a></div>
   <div><labal for="sel-color">Select color:</labal>
   <input type="color" id="sel-color" name="sel-color"></div>
 </body>
